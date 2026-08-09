@@ -1051,3 +1051,257 @@ body {
     font-size: 1.1rem;
   }
 }
+/* ===========================================================
+   RESPONSIVE CSS - ADD THIS AT THE END OF YOUR CSS FILE
+=========================================================== */
+
+/* -------------------- TABLETS -------------------- */
+
+@media screen and (max-width: 1024px){
+
+    .vault-main-header h2{
+        font-size:3.5rem;
+    }
+
+    .vault-interface{
+        padding:0 30px;
+        gap:25px;
+    }
+
+    .vault-container,
+    .vault-card{
+        width:700px;
+        height:400px;
+    }
+
+    .vault-card:nth-child(1){
+        transform:rotateY(0deg) translateZ(650px);
+    }
+
+    .vault-card:nth-child(2){
+        transform:rotateY(90deg) translateZ(650px);
+    }
+
+    .vault-card:nth-child(3){
+        transform:rotateY(180deg) translateZ(650px);
+    }
+
+    .vault-card:nth-child(4){
+        transform:rotateY(270deg) translateZ(650px);
+    }
+
+    .cast-slider-container{
+        width:730px;
+    }
+
+    .cast-card{
+        flex:0 0 350px;
+    }
+
+}
+
+
+/* -------------------- MOBILE -------------------- */
+
+@media screen and (max-width:768px){
+
+    /* ===== Vault Section ===== */
+
+    .vault-main-header{
+        margin-bottom:30px;
+    }
+
+    .vault-main-header h2{
+        font-size:2.5rem;
+        line-height:1.1;
+    }
+
+    .vault-main-header .sub-label{
+        font-size:.7rem;
+        letter-spacing:3px;
+    }
+
+    .vault-interface{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:20px;
+        padding:0 15px;
+    }
+
+    .lux-btn{
+        width:55px;
+        height:65px;
+        border-radius:18px;
+    }
+
+    .lux-btn span{
+        display:none;
+    }
+
+    .lux-btn i{
+        font-size:1rem;
+    }
+
+    .vault-container{
+        width:100%;
+        max-width:350px;
+        height:220px;
+    }
+
+    .vault-card{
+        width:100%;
+        height:220px;
+        border-radius:12px;
+    }
+
+    .vault-card img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position:center;
+    }
+
+    .vault-card:nth-child(1){
+        transform:rotateY(0deg) translateZ(280px);
+    }
+
+    .vault-card:nth-child(2){
+        transform:rotateY(90deg) translateZ(280px);
+    }
+
+    .vault-card:nth-child(3){
+        transform:rotateY(180deg) translateZ(280px);
+    }
+
+    .vault-card:nth-child(4){
+        transform:rotateY(270deg) translateZ(280px);
+    }
+
+    /* ===== Cast Section ===== */
+
+    .cast-section{
+        padding:70px 0;
+    }
+
+    .cast-header{
+        margin-bottom:35px;
+    }
+
+    .section-title{
+        font-size:2.8rem;
+        letter-spacing:2px;
+    }
+
+    .cast-slider-outer{
+        padding:0 60px;
+    }
+
+    .cast-slider-container{
+        width:100%;
+    }
+
+    .cast-wrapper{
+        gap:20px;
+    }
+
+    .cast-card{
+        flex:0 0 100%;
+        padding:18px;
+        border-radius:12px;
+    }
+
+    .cast-img{
+        width:100%;
+        height:300px;
+    }
+
+    .cast-img img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position:top;
+    }
+
+    .cast-desc h3{
+        font-size:1.9rem;
+    }
+
+    .role-title{
+        font-size:.75rem;
+    }
+
+    .cast-desc p{
+        font-size:.82rem;
+        line-height:1.6;
+    }
+
+    /* ===== Navigation Buttons ===== */
+
+    .cast-nav-btn{
+        width:48px;
+        height:48px;
+    }
+
+    .cast-nav-btn.prev{
+        left:5px;
+    }
+
+    .cast-nav-btn.next{
+        right:5px;
+    }
+
+    .cast-nav-btn i{
+        font-size:1rem;
+    }
+
+}
+
+
+/* -------------------- SMALL PHONES -------------------- */
+
+@media screen and (max-width:480px){
+
+    .vault-main-header h2{
+        font-size:2rem;
+    }
+
+    .vault-container{
+        max-width:310px;
+        height:190px;
+    }
+
+    .vault-card{
+        height:190px;
+    }
+
+    .vault-card img{
+        object-fit:cover;
+    }
+
+    .section-title{
+        font-size:2.2rem;
+    }
+
+    .cast-card{
+        flex:0 0 100%;
+    }
+
+    .cast-img{
+        height:240px;
+    }
+
+    .cast-desc h3{
+        font-size:1.6rem;
+    }
+
+    .cast-desc p{
+        font-size:.78rem;
+    }
+
+    .cast-nav-btn{
+        width:42px;
+        height:42px;
+    }
+
+}
