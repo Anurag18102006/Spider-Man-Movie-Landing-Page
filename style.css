@@ -1051,3 +1051,16 @@ body {
     font-size: 1.1rem;
   }
 }
+/* SMALL PHONES (Max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .hero-content h1 { font-size: 3rem; }
+  .vault-container, .vault-card { width: 280px; height: 180px; }
+  .vault-card:nth-child(1) { transform: rotateY(0deg) translateZ(250px); }
+  .vault-card:nth-child(2) { transform: rotateY(90deg) translateZ(250px); }
+  .vault-card:nth-child(3) { transform: rotateY(180deg) translateZ(250px); }
+  .vault-card:nth-child(4) { transform: rotateY(270deg) translateZ(250px); }
+}
+
+/* REVEAL ANIMATION */
+.reveal { opacity: 0; transform: translateY(30px); transition: 0.8s ease; }
+.reveal.active { opacity: 1; transform: translateY(0); }
