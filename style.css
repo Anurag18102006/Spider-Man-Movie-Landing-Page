@@ -887,11 +887,12 @@ body {
 /* Hero Date Tag */
 .hero-date {
   font-family: var(--font-heading);
-  color: var(--primary-red);
+   color: #E8C97A;
   font-size: 1.4rem;
   letter-spacing: 5px;
   margin-bottom: 10px;
-  text-shadow: 0 0 100px rgba(230, 36, 41, 0.4);
+ box-shadow: 0 0 20px rgb(228, 225, 225);
+}
 }
 
 /* Middle Date Banner Section */
