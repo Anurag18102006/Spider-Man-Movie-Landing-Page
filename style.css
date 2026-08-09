@@ -1041,16 +1041,64 @@ body {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
-/* Mobile Responsive adjustment for the large middle date */
-@media (max-width: 768px) {
-  .banner-content h2 {
-    font-size: 3rem;
-    letter-spacing: 5px;
-  }
-  .hero-date {
-    font-size: 1.1rem;
-  }
+@media screen and (max-width: 1024px) {
+  .hero-content h1 { font-size: 5.5rem; }
+  .hero-content h2 { font-size: 3rem; }
+  
+  .tech-container { gap: 30px; }
+  .tech-info-box h2 { font-size: 3rem; }
+
+  /* Adjust 3D Vault Depth for Tablet */
+  .vault-container, .vault-card { width: 650px; height: 380px; }
+  .vault-card:nth-child(1) { transform: rotateY(0deg) translateZ(600px); }
+  .vault-card:nth-child(2) { transform: rotateY(90deg) translateZ(600px); }
+  .vault-card:nth-child(3) { transform: rotateY(180deg) translateZ(600px); }
+  .vault-card:nth-child(4) { transform: rotateY(270deg) translateZ(600px); }
+
+  .cast-slider-container { width: 90%; margin: 0 auto; }
 }
+
+/* MOBILE (Max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .navbar { padding: 15px 5%; }
+  .nav-links { display: none; } /* Standard for mobile unless you have a burger menu */
+  
+  .hero-content h1 { font-size: 3.8rem; }
+  .hero-content h2 { font-size: 2.2rem; }
+  .hero-date { font-size: 1rem; letter-spacing: 3px; }
+  
+  .tech-container { grid-template-columns: 1fr; text-align: center; }
+  .spec-item { border-left: none; border-bottom: 2px solid var(--primary-red); padding: 0 0 15px 0; }
+
+  /* 3D Vault Mobile Adjustments */
+  .vault-main-header h2 { font-size: 2.5rem; }
+  .vault-interface { flex-direction: column; padding: 0 20px; gap: 30px; }
+  .vault-container { width: 320px; height: 200px; }
+  .vault-card { width: 320px; height: 200px; }
+  
+  /* Bring cards closer for small screens */
+  .vault-card:nth-child(1) { transform: rotateY(0deg) translateZ(280px); }
+  .vault-card:nth-child(2) { transform: rotateY(90deg) translateZ(280px); }
+  .vault-card:nth-child(3) { transform: rotateY(180deg) translateZ(280px); }
+  .vault-card:nth-child(4) { transform: rotateY(270deg) translateZ(280px); }
+
+  .lux-btn { width: 50px; height: 50px; border-radius: 50%; }
+  .lux-btn span { display: none; }
+
+  /* Date Banner Mobile */
+  .banner-content h2 { font-size: 2.2rem; letter-spacing: 3px; }
+  .banner-content h3 { font-size: 0.7rem; }
+
+  /* Cast Mobile */
+  .cast-card { flex: 0 0 280px; }
+  .section-title { font-size: 3rem; }
+
+  /* Footer Mobile */
+  .big-cta { font-size: 3.5rem; }
+  .footer-date { font-size: 1.2rem; }
+  .final-book-btn { padding: 15px 30px; font-size: 1.2rem; }
+}
+
 /* SMALL PHONES (Max-width: 480px) */
 @media screen and (max-width: 480px) {
   .hero-content h1 { font-size: 3rem; }
